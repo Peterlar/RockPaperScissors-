@@ -30,11 +30,3 @@ body {
     padding-top: 50px;
 }
 
-.result-selection {
-    opacity: .5;
-  }
-  
-  .result-selection.winner {
-    opacity: 1;
-    font-size: 1.5rem;
-  }
