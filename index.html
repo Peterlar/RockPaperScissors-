@@ -1,27 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Animal game</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-    <div class="selections">
-        <button class="selection" data-type="Rock">✊</button>
-        <button class="selection" data-type="Paper">✋</button>
-        <button class="selection" data-type="Scissor">✌️</button>
+  <h1 class="title">Amazing Animal Game!</h1>
+   <div class="rules">
+     <ul>
+       <li>Snake beats Bear!</li>
+       <li>Bear beats Falcon!</li>
+       <li>Falcon beats Snake!</li>
+       <li>No points means equal. Choose again!</li>
+     </ul>
+   </div>
+  <div class="selections">
+    <button class="selection" data-selection="snake">🐍</button>
+    <button class="selection" data-selection="falcon">🦅</button>
+    <button class="selection" data-selection="bear">🐻</button>
+  </div>
+  <div class="results">
+    <div>
+      You
+      <span class="result-score" data-your-score>0</span>
     </div>
-    <div class="results">
-        <div>
-            You
-            <span class="results-score">0</span>
-        </div>
-        <div>Computer
-            <span class="results-score">0</span>
-        </div>
+    <div data-final-column>
+      Computer
+      <span class="result-score" data-computer-score>0</span>
     </div>
-    <script src="assets/js/script.js"></script>
+    <button class="restart" onClick="window.location.reload();">Restart game!</button>
+  </div>
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
