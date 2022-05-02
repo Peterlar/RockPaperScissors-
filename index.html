@@ -8,20 +8,27 @@
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
+<!--Title and rules section-->
   <h1 class="title">Amazing Animal Game!</h1>
-   <div class="rules">
-     <ul>
-       <li>Snake beats Bear!</li>
-       <li>Bear beats Falcon!</li>
-       <li>Falcon beats Snake!</li>
-       <li>No points means equal. Choose again!</li>
-     </ul>
-   </div>
+  <!--Game rules button-->
+  <div class="game-rules">
+  <button onclick="myFunction()">Game Rules</button>
+</div>
+<div class="rules-description">
+  <p id="demo"></p>
+  <p id="demo2"></p>
+  <p id="demo3"></p>
+</div>
+  
+   
+   <!--Emoji button section-->
   <div class="selections">
     <button class="selection" data-selection="snake">🐍</button>
     <button class="selection" data-selection="falcon">🦅</button>
     <button class="selection" data-selection="bear">🐻</button>
   </div>
+
+  <!--Results with score section-->
   <div class="results">
     <div>
       You
@@ -31,6 +38,8 @@
       Computer
       <span class="result-score" data-computer-score>0</span>
     </div>
+
+    <!--Restart the game button section-->
     <button class="restart" onClick="window.location.reload();">Restart game!</button>
   </div>
   <script src="assets/js/script.js"></script>

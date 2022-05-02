@@ -59,3 +59,9 @@ function randomSelection() {
   const randomIndex = Math.floor(Math.random() * SELECTIONS.length)
   return SELECTIONS[randomIndex]
 }
+
+function myFunction() {
+  document.getElementById("demo").innerHTML = "🐍 Beats 🐻";
+  document.getElementById("demo2").innerHTML = "🐻Beats 🦅";
+  document.getElementById("demo3").innerHTML = "🦅Beats 🐍";
+}
